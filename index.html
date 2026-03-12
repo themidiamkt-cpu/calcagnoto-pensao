@@ -21,6 +21,30 @@
   <meta name="twitter:title" content="Calcagnoto Advogados | Pensão Alimentícia" />
   <meta name="twitter:description" content="Atuação em fixação, revisão e cobrança de pensão alimentícia com segurança jurídica." />
   <meta name="twitter:image" content="https://calcagnoto-pensao.vercel.app/assets/og-logo.png?v=2" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16724987587"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+
+    gtag("config", "AW-16724987587");
+  </script>
+  <!-- Event snippet for Contato conversion page -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof url !== "undefined") {
+          window.location = url;
+        }
+      };
+      gtag("event", "conversion", {
+        send_to: "AW-16724987587/vsArCJ-ZqNsZEMOdjKc-",
+        event_callback: callback
+      });
+      return false;
+    }
+  </script>
   <link rel="icon" type="image/png" href="assets/logo-c.png" />
   <link rel="shortcut icon" href="assets/logo-c.png" />
   <link rel="apple-touch-icon" href="assets/logo-c.png" />

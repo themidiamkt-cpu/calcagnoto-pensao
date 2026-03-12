@@ -13,6 +13,15 @@ if (menuToggle && siteNav) {
   });
 }
 
+const conversionClickLinks = document.querySelectorAll('a[href*="wa.me/"]');
+conversionClickLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.gtag_report_conversion === "function") {
+      window.gtag_report_conversion();
+    }
+  });
+});
+
 const teamPhoto = document.getElementById("teamPhoto");
 if (teamPhoto) {
   const localSources = [
