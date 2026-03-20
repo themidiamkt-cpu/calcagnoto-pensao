@@ -146,7 +146,7 @@ window.addEventListener("resize", () => {
 
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
-const contactWebhookUrl = "https://automacao.themidiamarketing.com.br/webhook-test/form-calca";
+const contactWebhookUrl = "https://automacao2.themidiamarketing.com.br/webhook/form-calca";
 
 if (contactForm && formFeedback) {
   const requiredFields = contactForm.querySelectorAll("[required]");
